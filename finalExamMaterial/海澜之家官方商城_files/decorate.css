@@ -1,0 +1,95 @@
+.hla                                						   *{list-style:none;text-decoration:none;-webkit-user-select:none;-moz-user-select:none}
+.hla                                .mateListCon .upfile{width:240px}
+.hla                                .mate-list{width:84%;margin-left:10px}
+.hla                                .mate-list-pic ul{margin:0;padding:0}
+.hla                                .uli li{padding:0 17px}
+.hla                                .uli li{padding:0 18px}
+.hla                                .quanping_box{width:100%;margin:0 auto;position:relative;}
+.hla                                .quanping{width:1920px;left:50%;margin-left:-960px;position:relative; overflow:hidden;}
+.hla                                .quanping a{text-decoration:none}
+.hla                                .mr0{margin-right:0}
+.hla                                map,map area{outline:0}
+.hla                                .mt_53{margin-top:-53px}
+.hla                                .mt_10{margin-top:-10px}
+.hla                                .w1200{width:1200px;margin:0 auto}
+.hla                                .w950_bg{background:url(#);overflow:hidden;padding-left:0}
+.hla                                .mt_150{margin:-150px auto 0 auto}
+.hla                                .w990{width:990px}
+.hla                                .w950{width:950px;margin:0 auto;background:#fff;overflow:hidden}
+.hla                                .mb10{margin-bottom:10px}
+.hla                                .mt10{margin-top:10px}
+.hla                                .mt_111{margin-top:-111px}
+.hla                                .ml10{margin-left:10px}
+.hla                                .mt_4{margin-top:-4px}
+.hla                                .mt_5{margin-top:-5px}
+.hla                                .mt_1{margin-top:-1px}
+.hla                                .mt_15{margin-top:-15px}
+.hla                                .mt15{margin-top:15px}
+.hla                                .mr10{margin-right:10px}
+.hla                                .mt_14{margin-top:-14px}
+.hla                                .mb5{margin-bottom:5px}
+.hla                                .mt5{margin-top:5px}
+.hla                                .ml5{margin-left:5px}
+.hla                                .ml4{margin-left:4px}
+.hla                                .mr5{margin-right:5px}
+.hla                                .pb10{padding-bottom:10px}
+.hla                                .pb10{padding-bottom:10px}
+.hla                                .pt10{padding-top:10px}
+.hla                                .pl10{padding-left:10px}
+.hla                                .pr10{padding-right:10px}
+.hla                                .pt16{padding-top:16px}
+.hla                                .mr20{margin-right:20px}
+.hla                                .mt2{margin-top:2px;display:block}
+.hla                                .ml2{margin-left:2px;display:block}
+.hla                                .mb2{margin-bottom:2px;display:block}
+.hla                                .mr2{margin-right:2px;display:block}
+.hla                                .ml1{margin-left:1px;display:block}
+.hla                                .ml3{margin-left:3px;display:block}
+.hla                                .ml_50{margin-left:-50px}
+.hla                                .mt3{margin-top:3px}
+.hla                                .mb1{margin-bottom:1px}
+.hla                                .mt_6{margin-top:-8px}
+.hla                                .mt_2{margin-top:-2px}
+.hla                                .mr4{margin-right:4px}
+.hla                                .ab{position:absolute}
+.hla                                .rela{position:relative}
+.hla                                .fid{position:fixed}
+.hla                                .fl{float:left}
+.hla                                .fr{float:right}
+.hla                                .cl{clear:both;height:0}
+.hla                                .cur_hand{cursor:pointer}
+.hla                                 /*控制鼠标样式为小手*/.d_block{display:block}
+.hla                                .wryh{font-family:"微软雅黑"}
+.hla                                .w199{width:199px}
+.hla                                .h339{height:339px}
+.hla                                .h370{height:370px}
+.hla                                .h307{height:307px}
+.hla                                .mt6{margin-top:6px}
+.hla                                .mt13{margin-top:13px}
+.hla                                .mt_74{margin-top:-74px}
+.hla                                .mt_73{margin-top:-73px}
+.hla                                .mt_17{margin:-17px auto}
+.hla                                .w990{width:990px;margin:0 auto;}
+.hla                                .wt990{width:990px;margin:0 auto;text-align:center}
+.hla                                .mt1{margin-top:1px}
+.hla                                .w1180{width:1180px}
+.hla                                .bor1-ccc{border:0 solid #CCC}
+.hla                                .minbox{margin:0 auto}
+.hla                                /*通用样式-end*/						  /*自动推荐4列*/						  .generalgoods1 .image{width:1010px;margin:0 auto;}
+.hla                                .generalgoods1 .image li{width:240px;height:337px;float:left;margin-left:10px;}
+.hla                                .generalgoods1 .image li img{width:240px;height:240px;}
+.hla                                 /*自动推荐5列*/						   .generalgoods2 .image{width:1195px}
+.hla                                .generalgoods2 .image li{width:219px;float:left;}
+.hla                             /*欢乐戏剧人2.5*//*欢乐戏剧人2.5*/	.hlxjr1{left:998px;top:270px;opacity:0;}
+.hla                            	.hlxjr2{left:998px;top:230px;opacity:0;}
+.hla                            	.hlxjr3{left:998px;top:365px;opacity:0;}
+.hla                            	.hlxjr4{left:998px;top:515px;opacity:0;}
+.hla                            	.hlxjr5{left:490px;top:710px;opacity:0;}
+.hla                            	.lbtabCont li.on .hlxjr1{left:998px;top:270px;opacity:1;-moz-transition:all 0.6s cubic-bezier(.28,.21,.49,.99) 1s;-webkit-transition:all 0.6s cubic-bezier(.28,.21,.49,.99) 1s;transition:all 0.6s cubic-bezier(.28,.21,.49,.99) 1s;}
+.hla                            	.lbtabCont li.on .hlxjr2{left:998px;top:270px;opacity:1;-moz-transition:all 0.4s  0.8s;-webkit-transition:all 0.4s  0.8s;transition:all 0.4s  0.8s;}
+.hla                            	.lbtabCont li.on .hlxjr3{left:998px;top:365px;opacity:1;-moz-transition:all 0.4s  0.6s;-webkit-transition:all 0.4s  0.6s;transition:all 0.4s  0.6s;}
+.hla                            	.lbtabCont li.on .hlxjr4{left:998px;top:475px;opacity:1;-moz-transition:all 0.4s  0.8s;-webkit-transition:all 0.4s  0.8s;transition:all 0.4s  0.8s;}
+.hla                            	.lbtabCont li.on .hlxjr5{left:490px;top:640px;opacity:1;-moz-transition:all 0.4s  0.6s;-webkit-transition:all 0.4s  0.6s;transition:all 0.4s  0.6s;}
+.hla          										 body{overflow:-Scroll;overflow-x:hidden;}
+.hla          					   .bg-c-eee{overflow:-Scroll;overflow-x:hidden;}
+.hla  .future,.now{display: none;}

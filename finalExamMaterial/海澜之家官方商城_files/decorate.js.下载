@@ -1,0 +1,276 @@
+var browser = 
+{
+    versions : function ()
+    {
+        var u = navigator.userAgent, app = navigator.appVersion;
+        return {
+            //移动终端浏览器版本信息
+            iPad : u.indexOf('iPad') > - 1, //是否iPad
+        };
+    }(),
+    language : (navigator.browserLanguage || navigator.language).toLowerCase()
+}
+ 
+/*文档加载*/
+$(function(){
+//定时发布代码
+for(var i=0;i<$(".dingshi").length;i++){
+			dingshi(i);
+		}
+		
+		function dingshi(i){
+			var timeNow=new Date().getTime();
+			var timeNext=new Date($(".dingshi").eq(i).children(".future").attr("data-time")).getTime();
+			var time=timeNext-timeNow;
+			if (time>=0) {
+				$(".dingshi").eq(i).children(".now").show();
+				$(".dingshi").eq(i).children(".future").html("");
+			} else{
+				$(".dingshi").eq(i).children(".future").show();
+				$(".dingshi").eq(i).children(".now").html("");
+			}
+		}
+			
+
+//适应pad-start
+if(browser.versions.iPad==true){
+ 	$(".goods990").css({"margin":"0 auto","float":"none","display":"block","-webkit-transform-origin":"50% 0px","zoom":1180/990 });
+	$(".goods990").siblings().hide();
+ }
+
+var r =$("html").width() /1190;
+
+if(r<1){
+$("html").css({"-webkit-transform":"scale(" + r + ")","-webkit-transform-origin":"0px 0px","overflow-x":"hidden"}); 
+$("body").css({"width":1/r*100+"%","overflow-x":"hidden"});
+}
+else{
+r=1;
+$("html").css({"-webkit-transform":"scale(" + r + ")","-webkit-transform-origin":"0px 0px","overflow-x":"hidden"}); 
+}//适应pad-end
+
+
+	/*首页start*/
+	//底部搜索框
+	var lb_index=0;
+	$(".search_inputdzdb").focus(function(){
+		if($(this).val()=="请输入产品名称或者货号"){
+		$(this).val("");
+		}
+	});
+	$(".search_inputdzdb").blur(function(){
+		if($(this).val()==""){
+		$(this).val("请输入产品名称或者货号");
+		}
+	});
+	//首页轮播start
+	$(".lbPrev").click(function(){
+			if(lb_index==0) lb_index=$(".lbtabHover li").length;
+			lb_index--;
+			lb_btn(lb_index);
+		})
+	$(".lbNext").click(function(){
+			if(lb_index==($(".lbtabHover li").length-1)) lb_index=-1;
+			lb_index++;
+			lb_btn(lb_index);
+		})
+	
+	var time= setInterval(function(){
+			lb_index++;
+			lb_index=lb_index%($(".lbtabHover li").length);
+			lb_btn(lb_index);
+		},8000);
+	$(".lbtabCont").mouseover(function(){
+		clearInterval(time);
+	});
+	$(".lbtabCont").mouseout(function(){
+		time= setInterval(function(){
+			lb_index++;
+			lb_index=lb_index%($(".lbtabHover li").length);
+			lb_btn(lb_index);
+		},8000);
+	});
+	$(".lbtabHover li").mouseover(function(){
+		lb_index=$(this).index();
+		lb_btn(lb_index);
+		clearInterval(time);
+	});
+	$(".lbtabHover li").mouseout(function(){
+		time= setInterval(function(){
+			lb_index++;
+			lb_index=lb_index%($(".lbtabHover li").length);
+			lb_btn(lb_index);
+		},8000);
+	});
+	//首页轮播end
+	/*搭配start*/
+	var daipeiList_index=0;
+	var daipeiTabList_index=0;
+	$(".daipeiList li").click(function(){
+		daipeiTabList_index=0;
+		daipeiList_index=$(this).index();
+		console.log(daipeiList_index);
+		$(".dapeiCon").show();
+		$(".dapeiCon .Con").hide();
+		$(".dapeiCon .Con").eq(daipeiList_index).show();
+		$(".dapeiTab"+(daipeiList_index+1)+" .dapeiTabCon li").eq(daipeiTabList_index).addClass("on").siblings().removeClass("on");
+		$(".dapeiTab"+(daipeiList_index+1)+" .dapeiTabList li").eq(daipeiTabList_index).addClass("on").siblings().removeClass("on");
+	})
+	$(".dapeiClose").click(function(){
+		$(".dapeiCon").hide();
+	})
+	$(".dapeiTabList li").mouseover(function(){
+		daipeiTabList_index=$(this).index();
+		$(this).addClass("on").siblings().removeClass("on");
+		$(".dapeiTab"+($(this).parent().parent().parent().index()+1)+" .dapeiTabCon li").eq(daipeiTabList_index).addClass("on").siblings().removeClass("on");
+	})
+	$(".dapeiTabPrev").bind("click",function(){
+		daipeiTabList_index--;
+		if(daipeiTabList_index<0)
+		{
+			daipeiTabList_index=$(".dapeiTab"+($(this).parent().parent().index()+1)+" .dapeiTabCon li").length-1;	
+		}
+		$(".dapeiTab"+($(this).parent().parent().index()+1)+" .dapeiTabCon li").eq(daipeiTabList_index).addClass("on").siblings().removeClass("on");
+		$(".dapeiTab"+($(this).parent().parent().index()+1)+" .dapeiTabList li").eq(daipeiTabList_index).addClass("on").siblings().removeClass("on");
+	})
+	$(".dapeiTabNext").bind("click",function(){
+		daipeiTabList_index++;
+		if(daipeiTabList_index>=$(".dapeiTab"+($(this).parent().parent().index()+1)+" .dapeiTabCon li").length)
+		{
+			daipeiTabList_index=0;	
+		}
+		$(".dapeiTab"+($(this).parent().parent().index()+1)+" .dapeiTabCon li").eq(daipeiTabList_index).addClass("on").siblings().removeClass("on");
+		$(".dapeiTab"+($(this).parent().parent().index()+1)+" .dapeiTabList li").eq(daipeiTabList_index).addClass("on").siblings().removeClass("on");
+	})
+	/*搭配end*/
+	/*首页end*/
+	
+	//列表页轮播start
+	var lieConIndex=0;
+	$(".lieList li").mouseover(function(){
+		lieConIndex=$(this).index();
+		$(".lieCon li").eq(lieConIndex).addClass("on").siblings().removeClass("on");
+		$(".lieList li").eq(lieConIndex).addClass("on").siblings().removeClass("on");
+	})
+	//列表页轮播end
+	//专题页start
+//了不起的挑战start
+	var tz_index;
+	var tzB_index;
+	$(".tiaozhan .tz_list li").mouseover(function(){
+		tz_index=$(this).index();
+		tzB_index=$(this).parent().parent(".tiaozhan").index();
+		console.log(tzB_index);
+		$(".tiaozhan"+tzB_index+" .tz_content li").eq(tz_index).addClass("on").siblings().removeClass("on");
+	});
+	//了不起的挑战end
+//专题页end
+
+})
+/*方法*/
+/*首页方法start*/
+//首页轮播start
+function lb_btn(i){
+	$(".lbtabHover li a").removeClass("on");
+	$(".lbtabHover li a").eq(i).addClass("on");
+	$(".lbtabCont li").removeClass("on");
+	$(".lbtabCont li").eq(i).addClass("on");
+}
+//首页轮播end
+//底部搜索框start
+function search_goodsdzdb(url){
+	var $srch_box=$('.search_inputdzdb');
+	if($srch_box.val()!='' && $srch_box.val() !='请输入产品名称或者货号'){ //$srch_box.val()!=$srch_box.attr('promptvalue') &&
+		url+=static_012(encodeURIComponent($srch_box.val()));//伪静态
+		location.href=url;
+	}else{
+		$srch_box.val('');
+		$srch_box.focus();
+	}
+	return false;
+}
+function static_012(key_search){
+	return "/search/?q="+key_search;
+}
+$(".btn_searchdzdb").click(function(){
+search_goodsdzdb("http://www.heilanhome.cn");
+});
+//底部搜索框end
+/*首页方法end*/
+//官网数据统计start
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?68abdfb844e459579c404230c1c426e1";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+//官网数据统计end
+//适应pad-start
+$(window).resize(function(){
+var r =$("html").width() /1190;
+console.log($("html").width() );
+if(r<1){
+$("html").css({"-webkit-transform":"scale(" + r + ")","-webkit-transform-origin":"0px 0px","overflow-x":"hidden"}); 
+$("body").css({"width":1/r*100+"%","overflow-x":"hidden"});
+
+}
+else{
+r=1;
+$("html").css({"-webkit-transform":"scale(" + r + ")","-webkit-transform-origin":"0px 0px","overflow-x":"hidden"}); 
+$("body").css({"width":1/r*100+"%","overflow-x":"hidden"});
+}
+})
+//适应pad-end
+
+
+/*FANGSHUO*/
+$(document).ready(function() {
+	$("#x_tab_title li").click(function() {
+		$(this).addClass("selected").siblings().removeClass("selected"); //removeClass就是删除当前其他类；只有当前对象有addClass("selected")；siblings()意思就是当前对象的同级元素，removeClass就是删除； 
+		$(".on").removeClass("on");
+		$("#x_tab_content li").eq($("#x_tab_title li").index(this)).addClass("on");
+	});
+});
+
+$(document).ready(function() {
+	$("#x_tab2_title li").click(function() {
+		$(this).addClass("selected").siblings().removeClass("selected"); //removeClass就是删除当前其他类；只有当前对象有addClass("selected")；siblings()意思就是当前对象的同级元素，removeClass就是删除； 
+		$(".on").removeClass("on");
+		$("#x_tab2_content li").eq($("#x_tab2_title li").index(this)).addClass("on");
+	});
+});
+
+$(document).ready(function() {
+	$(".x_eichitoo").hover(function() {
+		$(this).addClass("selected").siblings().removeClass("selected"); //removeClass就是删除当前其他类；只有当前对象有addClass("selected")；siblings()意思就是当前对象的同级元素，removeClass就是删除； 
+		$(".onch").removeClass("onch");
+		$("#eichitoo_bd").addClass("onch");
+	});
+});
+$(document).ready(function() {
+	$(".x_eichitookids").hover(function() {
+		$(this).addClass("selected").siblings().removeClass("selected"); //removeClass就是删除当前其他类；只有当前对象有addClass("selected")；siblings()意思就是当前对象的同级元素，removeClass就是删除； 
+		$(".onch").removeClass("onch");
+		$("#eichitookids_bd").addClass("onch");
+	});
+});
+
+$(document).ready(function() {
+	$(".x_hlahome").hover(function() {
+		$(this).addClass("selected").siblings().removeClass("selected"); //removeClass就是删除当前其他类；只有当前对象有addClass("selected")；siblings()意思就是当前对象的同级元素，removeClass就是删除； 
+		$(".onch").removeClass("onch");
+		$("#hlahome_bd").addClass("onch");
+	});
+});
+
+$(document).ready(function() {
+	$(".x_jeans").hover(function() {
+		$(this).addClass("selected").siblings().removeClass("selected"); //removeClass就是删除当前其他类；只有当前对象有addClass("selected")；siblings()意思就是当前对象的同级元素，removeClass就是删除； 
+		$(".onch").removeClass("onch");
+		$("#jeans_bd").addClass("onch");
+	});
+});
+
+
+	

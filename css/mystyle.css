@@ -1,0 +1,21 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+.header_span_left{
+	float: left;
+}
+.header_span_right{
+	float: right;
+	color: #666666;
+}
+.header_span{
+	cursor: pointer;
+	font-size: 14px;
+}
+.header_div_up{
+	height: 50px;
+	width: 100%;
+	background: #eeeeee;
+	line-height: 50px;
+}
