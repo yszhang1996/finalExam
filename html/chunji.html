@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>模仿男装网店海澜之家</title>
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="../css/mystyle.css">
+<script src="../javascript/js.js"></script>
+</head>
+<body>
+<header>
+<div class="header_div_up">
+<span class="header_span_left header_span" id="abc">你好，欢迎来到xxxx！<b>请登陆 | 合作账号登录 | 免费注册</b></span>
+<span class="header_span_right header_span">我的个人中心 | 在线客服 | 我的购物车有0件商品 | 帮助</span>
+</div>
+<div class="header_div_down">
+<img src="../images/1.png" align="top" style="cursor: pointer;">
+<img src="../images/2.png" id="img_logo_hla" style="cursor: pointer;">
+<input class="search_inputdzdb"  size="25"  type="text" value="冬季新品">
+</div>
+</header>
+<nav>
+<ul>
+  <li class="nav_li"><a href="../index.html">首页</a></li>
+  <li class="nav_li" onmouseover="display_nav_block(this);" onmouseout="display_nav_none(this);"><a href="all.html">所有商品</a>
+  <div class="nav_hide_1" id="nav_hide_1">
+  <div class="nav_hide_all">
+    <ul class="nav_hide_all_ul">
+      <li class="nav_hide_all_lifirst"><a href="">所有宝贝</a></li>
+      <li class="nav_hide_all_li"><a href="">人气排序</a></li>
+      <li class="nav_hide_all_li"><a href="">销量排序</a></li>
+      <li class="nav_hide_all_lilast"><a href="">价格排序</a></li>
+    </ul>
+    <ul class="nav_hide_all_ul">
+      <li class="nav_hide_all_lifirst"><a href="">冬季特卖</a></li>
+      <li class="nav_hide_all_li"><a href="">羽绒服</a></li>
+      <li class="nav_hide_all_li"><a href="">大衣</a></li>
+      <li class="nav_hide_all_li"><a href="">保暖卫衣</a></li>
+      <li class="nav_hide_all_li"><a href="">保暖衬衫</a></li>
+      <li class="nav_hide_all_li"><a href="">针织衫</a></li>
+      <li class="nav_hide_all_li"><a href="">夹克</a></li>
+      <li class="nav_hide_all_li"><a href="">牛仔外套</a></li>
+      <li class="nav_hide_all_lilast"><a href="">毛皮服装</a></li>
+    </ul>
+    <ul class="nav_hide_all_ul">
+      <li class="nav_hide_all_lifirst"><a href="">春季新品</a></li>
+      <li class="nav_hide_all_li"><a href="">卫衣</a></li>
+      <li class="nav_hide_all_li"><a href="">长袖衬衫</a></li>
+      <li class="nav_hide_all_li"><a href="">长袖T恤</a></li>
+      <li class="nav_hide_all_li"><a href="">夹克</a></li>
+      <li class="nav_hide_all_li"><a href="">休闲裤</a></li>
+      <li class="nav_hide_all_li"><a href="">牛仔裤</a></li>
+      <li class="nav_hide_all_lilast"><a href="">配饰</a></li>
+    </ul>
+    <ul class="nav_hide_all_ul">
+      <li class="nav_hide_all_lifirst"><a href="">上装</a></li>
+      <li class="nav_hide_all_li"><a href="">长袖衬衫</a></li>
+      <li class="nav_hide_all_li"><a href="">长袖T恤</a></li>
+      <li class="nav_hide_all_li"><a href="">卫衣</a></li>
+      <li class="nav_hide_all_li"><a href="">夹克</a></li>
+      <li class="nav_hide_all_li"><a href="">针织衫</a></li>
+      <li class="nav_hide_all_li"><a href="">大衣</a></li>
+      <li class="nav_hide_all_lilast"><a href="">风衣</a></li>
+    </ul>
+    <ul class="nav_hide_all_ul">
+      <li class="nav_hide_all_lifirst"><a href="">裤装</a></li>
+      <li class="nav_hide_all_li"><a href="">休闲裤</a></li>
+      <li class="nav_hide_all_li"><a href="">牛仔裤</a></li>
+      <li class="nav_hide_all_lilast"><a href="">西裤</a></li>
+    </ul>
+    <ul class="nav_hide_all_ul">
+      <li class="nav_hide_all_lifirst"><a href="">价格区间</a></li>
+      <li class="nav_hide_all_li"><a href="">10-79</a></li>
+      <li class="nav_hide_all_li"><a href="">98-158</a></li>
+      <li class="nav_hide_all_li"><a href="">168-238</a></li>
+      <li class="nav_hide_all_li"><a href="">258-298</a></li>
+      <li class="nav_hide_all_li"><a href="">318-498</a></li>
+      <li class="nav_hide_all_lilast"><a href="">558-800</a></li>
+    </ul>
+  </div>
+</div>
+  </li>
+  <li class="nav_li" onmouseover="display_nav_block(this);" onmouseout="display_nav_none(this);"><a href="winter.html">冬季热卖</a>
+  <div class="nav_hide_1 nav_hide_last" id="nav_hide_2">
+  <div class="nav_hide_all">
+    <ul class="nav_hide_all_ul">
+      <li class="nav_hide_all_li"><a href="">羽绒服</a></li>
+      <li class="nav_hide_all_li"><a href="">大衣</a></li>
+      <li class="nav_hide_all_li"><a href="">保暖卫衣</a></li>
+      <li class="nav_hide_all_li"><a href="">保暖衬衫</a></li>
+      <li class="nav_hide_all_li"><a href="">夹克</a></li>
+      <li class="nav_hide_all_li"><a href="">皮装</a></li>
+      <li class="nav_hide_all_li"><a href="">牛仔外套</a></li>
+      <li class="nav_hide_all_lilast"><a href="">西服</a></li>
+    </ul>
+    <img src="../images/3.jpg" class="nav_img">
+  </div>
+  </div>
+  </li>
+  <li class="nav_li" onmouseover="display_nav_block(this);" onmouseout="display_nav_none(this);"><a href="chunji.html">春季新品</a>
+  <div class="nav_hide_1 nav_hide_last" id="nav_hide_3">
+  <div class="nav_hide_all">
+    <ul class="nav_hide_all_ul">
+      <li class="nav_hide_all_li"><a href="">卫衣</a></li>
+      <li class="nav_hide_all_li"><a href="">长袖衬衫</a></li>
+      <li class="nav_hide_all_li"><a href="">长袖T恤</a></li>
+      <li class="nav_hide_all_li"><a href="">夹克</a></li>
+      <li class="nav_hide_all_li"><a href="">休闲裤</a></li>
+      <li class="nav_hide_all_li"><a href="">牛仔裤</a></li>
+      <li class="nav_hide_all_li"><a href="">风衣</a></li>
+      <li class="nav_hide_all_lilast"><a href="">西裤</a></li>
+    </ul>
+    <img src="../images/4.jpg" class="nav_img"> 
+  </div>
+  </div>
+  </li>
+  <li class="nav_li" onmouseover="display_nav_block(this);" onmouseout="display_nav_none(this);"><a href="yurongfu.html">羽绒服</a>
+  <div class="nav_hide_1 nav_hide_last" id="nav_hide_4">
+  <div class="nav_hide_all">
+    <ul class="nav_hide_all_ul">
+      <li class="nav_hide_all_li"><a href="">轻薄羽绒</a></li>
+      <li class="nav_hide_all_li"><a href="">马甲/背心</a></li>
+      <li class="nav_hide_all_li"><a href="">连帽款</a></li>
+      <li class="nav_hide_all_li"><a href="">保暖长款</a></li>
+      <li class="nav_hide_all_li"><a href="">运动系列</a></li>
+      <li class="nav_hide_all_li"><a href="">鹅绒系列</a></li>
+      <li class="nav_hide_all_li"><a href="">轻户外</a></li>
+      <li class="nav_hide_all_lilast"><a href="">时尚款</a></li>
+    </ul>
+    <img src="../images/5.jpg" class="nav_img"> 
+  </div>
+  </div>
+  </li>
+  <li class="nav_li" onmouseover="display_nav_block(this);" onmouseout="display_nav_none(this);"><a href="dayi.html">大衣</a>
+  <div class="nav_hide_1 nav_hide_last" id="nav_hide_5">
+  <div class="nav_hide_all">
+    <ul class="nav_hide_all_ul">
+      <li class="nav_hide_all_li"><a href="">风衣</a></li>
+      <li class="nav_hide_all_lilast"><a href="">羽绒大衣</a></li>
+    </ul>
+    <img src="../images/6.jpg" class="nav_img"> 
+  </div>
+  </div>
+  </li>
+  <li class="nav_li" onmouseover="display_nav_block(this);" onmouseout="display_nav_none(this);"><a href="weiyi.html">卫衣</a>
+  <div class="nav_hide_1 nav_hide_last" id="nav_hide_6">
+  <div class="nav_hide_all">
+    <ul class="nav_hide_all_ul">
+      <li class="nav_hide_all_li"><a href="">时尚易搭</a></li>
+      <li class="nav_hide_all_lilast"><a href="">加绒卫衣</a></li>
+    </ul>
+    <img src="../images/7.jpg" class="nav_img"> 
+  </div>
+  </div>
+  </li>
+  <li class="nav_li" onmouseover="display_nav_block(this);" onmouseout="display_nav_none(this);"><a href="changxiuchenshan.html">长袖衬衫</a>
+  <div class="nav_hide_1 nav_hide_last" id="nav_hide_7">
+  <div class="nav_hide_all">
+    <ul class="nav_hide_all_ul">
+      <li class="nav_hide_all_li"><a href="">休闲衬衫</a></li>
+      <li class="nav_hide_all_li"><a href="">正装衬衫</a></li>
+      <li class="nav_hide_all_li"><a href="">免烫衬衫</a></li>
+      <li class="nav_hide_all_li"><a href="">针织衬衫</a></li>
+      <li class="nav_hide_all_lilast"><a href="">保暖衬衫</a></li>
+    </ul>
+    <img src="../images/8.jpg" class="nav_img"> 
+  </div>
+  </div>
+  </li>
+  <li class="nav_li" onmouseover="display_nav_block(this);" onmouseout="display_nav_none(this);"><a href="changxiutxu.html">长袖T恤</a>
+  <div class="nav_hide_1 nav_hide_last" id="nav_hide_8">
+  <div class="nav_hide_all">
+    <ul class="nav_hide_all_ul">
+      <li class="nav_hide_all_lilast"><a href="">经典基础</a></li>
+    </ul>
+    <img src="../images/9.jpg" class="nav_img"> 
+  </div>
+  </div>
+  </li>
+  <li class="nav_li" onmouseover="display_nav_block(this);" onmouseout="display_nav_none(this);"><a href="jiake.html">夹克</a>
+  <div class="nav_hide_1 nav_hide_last" id="nav_hide_9">
+  <div class="nav_hide_all">
+    <ul class="nav_hide_all_ul">
+      <li class="nav_hide_all_li"><a href="">双面穿夹克</a></li>
+      <li class="nav_hide_all_li"><a href="">摇粒绒夹克</a></li>
+      <li class="nav_hide_all_li"><a href="">牛仔夹克</a></li>
+      <li class="nav_hide_all_lilast"><a href="">皮夹克</a></li>
+    </ul>
+    <img src="../images/10.jpg" class="nav_img"> 
+  </div>
+  </div>
+  </li>
+  <li class="nav_li" onmouseover="display_nav_block(this);" onmouseout="display_nav_none(this);"><a href="zhenzhishan.html">针织衫/毛衫</a>
+  <div class="nav_hide_1 nav_hide_last" id="nav_hide_10">
+  <div class="nav_hide_all">
+    <ul class="nav_hide_all_ul">
+      <li class="nav_hide_all_li"><a href="">基础款</a></li>
+      <li class="nav_hide_all_li"><a href="">羊毛/羊绒款</a></li>
+      <li class="nav_hide_all_li"><a href="">开衫式假两件</a></li>
+      <li class="nav_hide_all_lilast"><a href="">加绒款</a></li>
+    </ul>
+    <img src="../images/11.jpg" class="nav_img"> 
+  </div>
+  </div>
+  </li>
+  <li class="nav_li" onmouseover="display_nav_block(this);" onmouseout="display_nav_none(this);"><a href="xiuxianku.html">休闲裤</a>
+  <div class="nav_hide_1 nav_hide_last" id="nav_hide_11">
+  <div class="nav_hide_all">
+    <ul class="nav_hide_all_ul">
+      <li class="nav_hide_all_li"><a href="">基础实穿</a></li>
+      <li class="nav_hide_all_li"><a href="">温暖磨毛</a></li>
+      <li class="nav_hide_all_lilast"><a href="">灯芯绒</a></li>
+    </ul>
+    <img src="../images/12.jpg" class="nav_img"> 
+  </div>
+  </div>
+  </li>
+  <li class="nav_li" onmouseover="display_nav_block(this);" onmouseout="display_nav_none(this);"><a href="niuzaiku.html">牛仔裤</a>
+  <div class="nav_hide_1 nav_hide_last" id="nav_hide_12">
+  <div class="nav_hide_all">
+    <ul class="nav_hide_all_ul">
+      <li class="nav_hide_all_li"><a href="">基础牛仔</a></li>
+      <li class="nav_hide_all_lilast"><a href="">温暖加绒</a></li>
+    </ul>
+    <img src="../images/13.jpg" class="nav_img"> 
+  </div>
+  </div>
+  </li>
+  <li class="nav_li" onmouseover="display_nav_block(this);" onmouseout="display_nav_none(this);"><a href="xifu.html">西服</a>
+  <div class="nav_hide_1 nav_hide_last" id="nav_hide_13">
+  <div class="nav_hide_all">
+    <ul class="nav_hide_all_ul">
+      <li class="nav_hide_all_li"><a href="">休闲西服</a></li>
+      <li class="nav_hide_all_lilast"><a href="">套装西服</a></li>
+    </ul>
+    <img src="../images/14.jpg" class="nav_img"> 
+  </div>
+  </div>
+  </li>
+  <li class="nav_li" onmouseover="display_nav_block(this);" onmouseout="display_nav_none(this);"><a href="peishi.html">配饰</a>
+  <div class="nav_hide_1 nav_hide_last" id="nav_hide_14">
+  <div class="nav_hide_all">
+    <ul class="nav_hide_all_ul">
+      <li class="nav_hide_all_li"><a href="">皮带</a></li>
+      <li class="nav_hide_all_li"><a href="">领带</a></li>
+      <li class="nav_hide_all_li"><a href="">领结</a></li>
+      <li class="nav_hide_all_li"><a href="">内衣</a></li>
+      <li class="nav_hide_all_li"><a href="">围巾</a></li>
+      <li class="nav_hide_all_li"><a href="">内裤</a></li>
+      <li class="nav_hide_all_li"><a href="">袜子</a></li>
+      <li class="nav_hide_all_lilast"><a href="">男鞋</a></li>
+    </ul>
+    <img src="../images/15.jpg" class="nav_img">
+  </div>
+  </div>
+  </li>
+</ul>
+</nav>
+<main>
+  <aside>
+    <img src="../images/25.jpg">
+    <img src="../images/26.jpg">
+    <img src="../images/27.jpg">
+    <p>2019春季新品</p>
+    <ul>
+      <li>羽绒服</li>
+      <li>针织衫</li>
+      <li>保暖衬衫</li>
+      <li>夹克</li>
+      <li>大衣</li>
+      <li>保暖卫衣</li>
+      <li>西服</li>
+      <li>牛仔外套</li>
+      <li>皮装</li>
+      <li>围巾</li>
+    </ul>
+    <p>2019春季新品</p>
+    <p>2018秋季热卖</p>
+  </aside>
+  <section>
+    <h2>2018冬季特卖</h2>
+    <div class="section_top">
+      <p>
+      <span>排序：</span>
+      <select>
+        <option>按上架时间排序</option>
+        <option>按最热排序</option>
+      </select>
+      </p>
+      <span id="span_right">当前40/1687件商品 1 <a href="#">2</a> <a href="#">3</a> 上一页 <a href="#">下一页</a></span>
+    </div>
+    <div class="shop">
+      <div class="shangpin"><a href="shop.html"><img src="../images/s1.jpg" class="shangpinimg"></a><p class="shangpinming">HLA海澜之家水洗混纺休闲衬衫</p><span>售价</span><span class="jiage">¥218.00</span></div>
+      <div class="shangpin"><a href="shop.html"><img src="../images/s2.jpg" class="shangpinimg"></a><p class="shangpinming">HLA海澜之家不规则提花休闲衬衫</p><span>售价</span><span class="jiage">¥218.00</span></div>
+      <div class="shangpin"><a href="shop.html"><img src="../images/s3.jpg" class="shangpinimg"></a><p class="shangpinming">HLA海澜之家舒适易打理休闲衬衫</p><span>售价</span><span class="jiage">¥218.00</span></div>
+      <div class="shangpin"><a href="shop.html"><img src="../images/s37.jpg" class="shangpinimg"></a><p class="shangpinming">HLA海澜之家舒适易打理休闲衬衫</p><span>售价</span><span class="jiage">¥218.00</span></div>
+      <div class="shangpin"><a href="shop.html"><img src="../images/s38.jpg" class="shangpinimg"></a><p class="shangpinming">HLA海澜之家舒适易打理休闲衬衫</p><span>售价</span><span class="jiage">¥218.00</span></div>
+      <div class="shangpin"><a href="shop.html"><img src="../images/s39.jpg" class="shangpinimg"></a><p class="shangpinming">HLA海澜之家舒适易打理休闲衬衫</p><span>售价</span><span class="jiage">¥218.00</span></div>
+      <div class="shangpin"><a href="shop.html"><img src="../images/s7.jpg" class="shangpinimg"></a><p class="shangpinming">HLA海澜之家舒适易打理休闲衬衫</p><span>售价</span><span class="jiage">¥218.00</span></div>
+      <div class="shangpin"><a href="shop.html"><img src="../images/s8.jpg" class="shangpinimg"></a><p class="shangpinming">HLA海澜之家舒适易打理休闲衬衫</p><span>售价</span><span class="jiage">¥218.00</span></div>
+      <div class="shangpin"><a href="shop.html"><img src="../images/s9.jpg" class="shangpinimg"></a><p class="shangpinming">HLA海澜之家舒适易打理休闲衬衫</p><span>售价</span><span class="jiage">¥218.00</span></div>
+      <div class="shangpin"><a href="shop.html"><img src="../images/s10.jpg" class="shangpinimg"></a><p class="shangpinming">HLA海澜之家舒适易打理休闲衬衫</p><span>售价</span><span class="jiage">¥218.00</span></div>
+      <div class="shangpin"><a href="shop.html"><img src="../images/s11.jpg" class="shangpinimg"></a><p class="shangpinming">HLA海澜之家舒适易打理休闲衬衫</p><span>售价</span><span class="jiage">¥218.00</span></div>
+      <div class="shangpin"><a href="shop.html"><img src="../images/s12.jpg" class="shangpinimg"></a><p class="shangpinming">HLA海澜之家舒适易打理休闲衬衫</p><span>售价</span><span class="jiage">¥218.00</span></div>
+      <div class="shangpin"><a href="shop.html"><img src="../images/s13.jpg" class="shangpinimg"></a><p class="shangpinming">HLA海澜之家舒适易打理休闲衬衫</p><span>售价</span><span class="jiage">¥218.00</span></div>
+      <div class="shangpin"><a href="shop.html"><img src="../images/s14.jpg" class="shangpinimg"></a><p class="shangpinming">HLA海澜之家舒适易打理休闲衬衫</p><span>售价</span><span class="jiage">¥218.00</span></div>
+      <div class="shangpin"><a href="shop.html"><img src="../images/s15.jpg" class="shangpinimg"></a><p class="shangpinming">HLA海澜之家舒适易打理休闲衬衫</p><span>售价</span><span class="jiage">¥218.00</span></div>
+      <div class="shangpin"><a href="shop.html"><img src="../images/s16.jpg" class="shangpinimg"></a><p class="shangpinming">HLA海澜之家舒适易打理休闲衬衫</p><span>售价</span><span class="jiage">¥218.00</span></div>
+      <div class="shangpin"><a href="shop.html"><img src="../images/s17.jpg" class="shangpinimg"></a><p class="shangpinming">HLA海澜之家舒适易打理休闲衬衫</p><span>售价</span><span class="jiage">¥218.00</span></div>
+      <div class="shangpin"><a href="shop.html"><img src="../images/s18.jpg" class="shangpinimg"></a><p class="shangpinming">HLA海澜之家舒适易打理休闲衬衫</p><span>售价</span><span class="jiage">¥218.00</span></div>
+      <div class="shangpin"><a href="shop.html"><img src="../images/s19.jpg" class="shangpinimg"></a><p class="shangpinming">HLA海澜之家舒适易打理休闲衬衫</p><span>售价</span><span class="jiage">¥218.00</span></div>
+      <div class="shangpin"><a href="shop.html"><img src="../images/s20.jpg" class="shangpinimg"></a><p class="shangpinming">HLA海澜之家舒适易打理休闲衬衫</p><span>售价</span><span class="jiage">¥218.00</span></div>
+      <div class="shangpin"><a href="shop.html"><img src="../images/s21.jpg" class="shangpinimg"></a><p class="shangpinming">HLA海澜之家舒适易打理休闲衬衫</p><span>售价</span><span class="jiage">¥218.00</span></div>
+    </div>
+    <div class="section_top">
+      <span id="span_right">当前40/1687件商品 1 <a href="#">2</a> <a href="#">3</a> 上一页 <a href="#">下一页</a></span>
+    </div>
+  </section>
+</main>
+<footer>
+  <div class="footer_up">
+    <ul>
+      <li><img src="../images/22.jpg"><p>7天</p><span>无条件退货</span></li>
+      <li><img src="../images/23.jpg"><p>全场</p><span>全场满68包邮</span></li>
+      <li><img src="../images/24.jpg"><p>全国</p><span>快递上门服务</span></li>
+    </ul>
+  </div>
+  <div class="footer_mid">
+    <ul>
+      <li class="firstli">新手指南</li>
+      <li>用户注册</li>
+      <li>找回密码</li>
+      <li>服务条款</li>
+    </ul>
+    <ul>
+      <li class="firstli">购物指南</li>
+      <li>购物流程</li>
+      <li>订单查询</li>
+      <li>抵用卷使用流程</li>
+    </ul>
+    <ul>
+      <li class="firstli">配送方式</li>
+      <li>配送城市和费用</li>
+      <li>商品验货和签收</li>
+    </ul>
+    <ul>
+      <li class="firstli">支付方式</li>
+      <li>中国银联</li>
+      <li>支付宝</li>
+      <li>发票制度</li>
+    </ul>
+    <ul>
+      <li class="firstli">售后服务</li>
+      <li>退换货政策</li>
+      <li>退换货流程</li>
+      <li>退款方式</li>
+      <li>隐私声明</li>
+    </ul>
+  </div> 
+  <div class="footer_bottom">
+    <p id="p_line"></p>
+    <p>工信部备案·XXXXXXXXXX号</p>
+    <p>增值电信业务经营许可证·B1-XXXXXX</p>
+    <p>©2014-2018 XX电子商务有限公司 版权所有</p>
+  </div>
+</footer>
+</body>
+</html>
